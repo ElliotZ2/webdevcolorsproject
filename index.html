@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body onload="initialize();">
+    <div id="navbarwrapper">
+        <a href="index.html">HOME</a>
+        <div class="linediv"></div>
+        <a href="draw.html">DRAW</a>
+        <div class="linediv"></div>
+        <a href="index.html">GALLERY</a>
+        <div class="linediv"></div>
+        <a href="index.html">MORE</a>
+        <div class="linediv"></div>
+        <div style="padding-left: 200px;"></div>
+        <div id="palettewrapper">
+            <div id="colorsquare1" class="colorsquare"></div>
+            <div id="colorsquare2" class="colorsquare"></div>
+            <div id="colorsquare3" class="colorsquare"></div>
+            <div id="colorsquare4" class="colorsquare"></div>
+            <div id="colorsquare5" class="colorsquare"></div>
+        </div>
+    </div>
+
+    <!--make a function in javascript that when the input changes, update the correct table things-->
+
+    <table border="1">
+        <tr><th>Color</th><th>RGB</th><th>HEX</th></tr>
+        <tr><td><input id = "colorinput1" type="color" onchange="changeColor();"></td><td id="colorrgb1"></td><td id="colorhex1"></td></tr>
+        <tr><td><input id = "colorinput2" type="color" onchange="changeColor();"></td><td id="colorrgb2"></td><td id="colorhex2"></td></tr>
+        <tr><td><input id = "colorinput3" type="color" onchange="changeColor();"></td><td id="colorrgb3"></td><td id="colorhex3"></td></tr>
+        <tr><td><input id = "colorinput4" type="color" onchange="changeColor();"></td><td id="colorrgb4"></td><td id="colorhex4"></td></tr>
+        <tr><td><input id = "colorinput5" type="color" onchange="changeColor();"></td><td id="colorrgb5"></td><td id="colorhex5"></td></tr>
+    </table>
+</body>
+</html>
