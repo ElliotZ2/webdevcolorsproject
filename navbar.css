@@ -26,9 +26,9 @@
 .linediv{
     height: 50px;
     width: 2px;
-    background-color: rgb(107, 107, 107);
     border-radius: 20px;
     align-self: center;
+    background-image: linear-gradient(0deg, rgb(40, 52, 60), rgb(110, 110, 102));
 }
 
 #palettewrapper{
