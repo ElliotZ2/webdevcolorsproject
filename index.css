@@ -54,8 +54,20 @@ tr:nth-child(even) {
     background-color:#cccccc;
 }
 
-h1{
+h1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
     text-align: center;
+    background-color: #f3ec78;
+    background-image: linear-gradient(45deg, #FF0000, #FF7F00, #FFFF00, #00FF00, #2e73ff, #c43bff);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    text-shadow: 1px 1px 75px rgb(255, 255, 255);
 }
 
 p{
