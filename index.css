@@ -53,3 +53,14 @@ th{
 tr:nth-child(even) {
     background-color:#cccccc;
 }
+
+h1{
+    text-align: center;
+}
+
+p{
+    font-size: 20px;
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+}
