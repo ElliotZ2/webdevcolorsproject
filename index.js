@@ -33,3 +33,20 @@ function hexToRGB(hex) {
     let b = parseInt(hex.substring(4,6), 16);
     return r + ", " + g + ", " + b;
 }
+
+function setRandomColors() {
+    for(let i = 1; i <= 5; i++) {
+        var randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+        let colorInputElement = document.getElementById("colorinput"+i);
+        colorInputElement.value = randomColor;
+    }
+    setColors();
+}
+
+function resetColors() {
+    for(let i = 1; i <= 5; i++) {
+        let colorInputElement = document.getElementById("colorinput"+i);
+        colorInputElement.value = "#ffffff";
+    }
+    setColors();
+}
