@@ -5,7 +5,6 @@
     display: flex;
     justify-content: flex-start;
     padding-left: 50px;
-    overflow: hidden;
 }
 
 #navbarwrapper a{
@@ -42,6 +41,7 @@
     align-content: center;
     justify-content: center;
     gap: 10px;
+    margin-left: 100px;
 }
 
 .colorsquare{
@@ -52,6 +52,51 @@
     border-radius: 7px;
 }
 
+#optionswrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 800px) {
+    #navbarwrapper{
+        flex-direction: column;
+        height: 100px;
+        padding-bottom: 20px;
+        padding-left: 0px;
+        width: 100%;
+    }
+
+    #navbarwrapper a{
+        width: 25%;
+    }
+
+    #palettewrapper{
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+}
+
 body{
     margin: 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#footerwrapper{
+    background-color: black;
+    width: 100%;
+    margin: 0px;
+    margin-top: auto;
+    margin-bottom: 0px;
+    bottom: 0px;
+    position: relative;
+}
+
+footer p{
+    color: white;
+    font-size:14px;
+    margin: 0px;
+    margin-top: auto;
+    text-align: center;
 }

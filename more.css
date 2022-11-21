@@ -1,11 +1,16 @@
 .wrapper{
-    width: 100%;
+    display: flex;
+    padding: 20px;
+    margin: 0px;
     background-color: aquamarine;
+    border: solid 1px;
+    flex-direction: row;
 }
 
 body{
     padding: 0px;
     margin: 0px;
+    width: 100%;
 }
 
 .heading{
@@ -14,5 +19,19 @@ body{
 }
 
 h1{
-    
+    text-align: center;
+}
+
+p{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+
+@media screen and (max-width: 800px) {
+    .wrapper{
+        flex-direction: column;
+    }
 }
